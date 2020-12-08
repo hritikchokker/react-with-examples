@@ -4,9 +4,8 @@ import StartRating from "./components/StarRating";
 export default function App() {
   return (
     <StartRating
-      // totalStars={120}
       style={{ backgroundColor: "lightblue" }}
-      onDoubleClick={e => alert("double click")}
+      onDoubleClick={e => alert("you just double clicked")}
     />
   );
 }

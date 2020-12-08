@@ -14,7 +14,7 @@ export default function StarRating({ style = {}, totalStars = 5, ...props }) {
         />
       ))}
       <p>
-        {selectedStars} of {totalStars} stars
+        {selectedStars} of {totalStars}
       </p>
     </div>
   );
