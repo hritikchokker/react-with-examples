@@ -51,3 +51,10 @@ const PureCat = memo(
 Cat,
 (prevProps, nextProps) => prevProps.name === nextProps.name
 );
+
+const PureCat = memo(Cat);
+function App() {
+const meow = useCallback(name => console.log(`${name} has meowed`, []);
+return <PureCat name="Biscuit" meow={meow} />
+
+}
