@@ -1,22 +1,21 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useCallback } from "react";
+const fn = () => {
+  console.log("hello");
+  console.log("world");
+};
+useEffect(() => {
+  console.log("fresh render");
+  fn();
+}, [fn]);
 
-const words = useMemo(() => {
-  const words = children.split(" ");
-  return words;
+const fn = useCallback(() => {
+  console.log("hello");
+  console.log("world");
 }, []);
 useEffect(() => {
   console.log("fresh render");
-}, [words]);
-
-function WordCount({ children = "" }) {
-useAnyKeyToRender();
-const words = useMemo(() => children.split(" "), [children]);
-useEffect(() => {
-console.log("fresh render");
-}, [words]);
-// return (...);
-}
-
+  fn();
+}, [fn]);
 
 const useJazzyNews = () => {
 const [_posts, setPosts] = useState([]);
