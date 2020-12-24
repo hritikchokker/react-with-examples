@@ -6,9 +6,9 @@ export default function Hooks_one() {
   useEffect(() => {
     // newsFeed.subscribe(addPost);
     // welcomeChime.play();
-    alert("component created");
+    // alert("component created");
     return () => {
-      alert("component destroyed");
+      // alert("component destroyed");
       // newsFeed.unsubscribe(addPost);
       // goodbyeChime.play();
     };
